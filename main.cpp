@@ -48,6 +48,7 @@ int main() {
             break;
         case 3:
             SwitchLoop = false;
+            std::cout << "Thank you for Visitng" << std::endl;
             break;
 
 
