@@ -12,8 +12,6 @@ void ProgramGreeting() {
 }
 
 
-
-
 int main() {
     ProgramGreeting();
     
@@ -35,7 +33,7 @@ int main() {
         std::cout << "1. Add Transaction" << std::endl;
         std::cout << "2. View Transaction" << std::endl;
         std::cout << "3. Exit Program" << std::endl;
-        std::cout << "Enter a choice(1-3) " << std::endl;
+        std::cout << "Enter a choice: ";
         std::cin >> choice;
      
 

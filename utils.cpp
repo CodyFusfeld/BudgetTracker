@@ -22,7 +22,7 @@ void addTransaction(std::vector<Transaction>& transactions){
     std::cin >> category;
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-    std::cout << "When is this Transaction taking Place: " <<std::endl;
+    std::cout << "When is this Transaction taking Place (mm/dd/yyyy): " <<std::endl;
     std::cin >> date;
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
@@ -45,13 +45,18 @@ void viewTransactions(const std::vector<Transaction>& transactions) {
     }
 
         
-        std::cout << std::left
-              << std::setw(16) << "Account Number"
+        std::cout << std::left << std::setw(20) << " Account Number"
+        << std::left << std::setw(15) << "Amount" 
+        << std::left << std::setw(15) << "Category"
+        << "Date" << std::endl;
+              
+              /*<< std::setw(16) << "Account Number"
               << std::setw(8)  << "Amount"
               << std::setw(16) << "Category"
               << std::setw(16) << "Date"
-              << std::endl;
-    std::cout << std::string(56, '-') << "\n";
+              << std::endl;*/
+
+    std::cout << '|' << std::string(59, '-') << '|' << "\n";
     // ...existing code...
 
 
